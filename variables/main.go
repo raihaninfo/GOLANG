@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
-func main(){
-	fmt.Println("go code")
+// string type data
+func main() {
+	var name string = "Raihan"
+	fmt.Println(name)
 }
