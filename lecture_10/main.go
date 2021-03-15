@@ -8,7 +8,7 @@ func main() {
 	x["Name"] = "Raihan"
 	x["Age"] = "21"
 	x["Job"] = "Student"
-
+	delete(x, "Job")
 	fmt.Println(x)
 	// fmt.Println(x["Name"])
 
