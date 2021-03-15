@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// array, slice, map, struct
+	// slice
 	// var student [3]string
 	// student[0] = "Raihan"
 	// student[1] = "Hasan"
