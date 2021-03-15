@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 func main(){
 	// array, slice, map, struct
@@ -13,6 +14,9 @@ func main(){
 	age[2] = 20
 	fmt.Println(age[2])
 	// fmt.Println(len(student))
+	// short hand way
+	students := [3] string{"Raihan", "hasan", "Ruhul-Amin"}
+	fmt.Println(students)
 
 
 }
