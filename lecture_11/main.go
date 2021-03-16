@@ -21,7 +21,7 @@ func main() {
 	fmt.Println(b1)
 	fmt.Println(b1.Title)
 	fmt.Println(b1.Author)
-	b2:= struct{
+	b3:= struct{
 		Title  string
 		Author  string
 		Price  string
@@ -32,6 +32,6 @@ func main() {
 		Price: "100$",
 		Pages: 200,
 	}
-	fmt.Println(b2)
+	fmt.Println(b3)
 
 }
