@@ -1,5 +1,24 @@
 package main
+
 import "fmt"
-func main(){
-	fmt.Println("Raihan Info")
+
+type Book struct {
+	Title  string
+	Author string
+	ISBN   string
+	price  string
+	pages  int
+}
+
+func main() {
+	// structs
+	var b1 Book
+	b1.Title = "GOLANG book"
+	b1.Author = "CALEB DOXY"
+	b1.price = "$200"
+	b1.ISBN = "52528522552"
+	b1.pages = 300
+	fmt.Println(b1)
+	fmt.Println(b1.Title)
+	fmt.Println(b1.Author)
 }
