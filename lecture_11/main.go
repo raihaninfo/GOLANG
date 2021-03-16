@@ -33,5 +33,4 @@ func main() {
 		Pages:  200,
 	}
 	fmt.Println(b2)
-
 }
