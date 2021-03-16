@@ -21,4 +21,17 @@ func main() {
 	fmt.Println(b1)
 	fmt.Println(b1.Title)
 	fmt.Println(b1.Author)
+	b2 := struct {
+		Title  string
+		Author string
+		Price  string
+		Pages  int
+	}{
+		Title:  "Golang book",
+		Author: "Caleb doxy",
+		Price:  "100$",
+		Pages:  200,
+	}
+	fmt.Println(b2)
+
 }
