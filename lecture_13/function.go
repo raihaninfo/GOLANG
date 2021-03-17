@@ -32,6 +32,7 @@ func main() {
 	a := func(r, n int) int{
 		r=r+n
 		return r
-	}
-	fmt.Println(a(50,10))
+	}(50,10)
+	// fmt.Println(a(50,10))
+	fmt.Println(a)
 }
