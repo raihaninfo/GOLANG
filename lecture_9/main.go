@@ -7,7 +7,6 @@ func main() {
 	var age int
 	var result float32
 	var chr rune
-	var inFound bool
 	fmt.Println(name)
 	fmt.Println(age)
 	fmt.Println(result)
