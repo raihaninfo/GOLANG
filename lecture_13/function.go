@@ -27,4 +27,11 @@ func main() {
 
 	x := add(20, 20)
 	fmt.Println(x)
+
+	// anonimus functin 
+	a := func(r, n int) int{
+		r=r+n
+		return r
+	}
+	fmt.Println(a(50,10))
 }
