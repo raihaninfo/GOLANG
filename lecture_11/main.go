@@ -21,16 +21,16 @@ func main() {
 	fmt.Println(b1)
 	fmt.Println(b1.Title)
 	fmt.Println(b1.Author)
-	b3:= struct{
+	b3 := struct {
 		Title  string
-		Author  string
+		Author string
 		Price  string
-		Pages int
+		Pages  int
 	}{
-		Title: "Golang book",
+		Title:  "Golang book",
 		Author: "Caleb doxy",
-		Price: "100$",
-		Pages: 200,
+		Price:  "100$",
+		Pages:  200,
 	}
 	fmt.Println(b3)
 
