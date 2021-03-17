@@ -17,6 +17,8 @@ func main() {
 		fmt.Println("You are middle age")
 	} else if age > 50 && age < 100 {
 		fmt.Println("you are Old man")
+	} else {
+		fmt.Println("Enter The valid age")
 	}
 
 }
