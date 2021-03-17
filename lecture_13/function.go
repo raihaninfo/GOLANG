@@ -15,16 +15,16 @@ func add(x, y int) int{
 	return r
 
  }*/
-func add(x, y int)  int{
+func add(x, y int) int {
 	// function body
-	r := x+y
+	r := x + y
 	return r
 
 }
 
-func main(){
+func main() {
 	// code
 
-	x:= add(20, 20)
+	x := add(20, 20)
 	fmt.Println(x)
 }
