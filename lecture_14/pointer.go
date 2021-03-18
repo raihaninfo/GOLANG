@@ -13,7 +13,9 @@ func main(){
 	y=&x
 	// memory address
 	fmt.Println(x)
+	
 	fmt.Println(y)
+	
 	fmt.Println(&y)
 
 	update(&x)
