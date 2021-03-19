@@ -27,7 +27,9 @@ func main() {
 	fmt.Println(reqstr)
 
 	body := `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title></title></head><body><strong>This is my first golang web<br>
-	<h2>Md Abu Raihan</h2></strong></body></html>`
+	<h2>Md Abu Raihan</h2>
+	<h3>Web Developer</h3>
+	</strong></body></html>`
 
 	resp := "HTTP/1.1 200 OK\r\n" +
 		"Content-Length: %d\r\n" +
