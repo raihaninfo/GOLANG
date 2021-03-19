@@ -35,7 +35,6 @@ func main() {
 		"Content-Length: %d\r\n" +
 		"Content-Type: text/html\r\n" +
 		"\r\n%s"
-
 	msg := fmt.Sprintf(resp, len(body), body)
 	fmt.Println(msg)
 	conn.Write([]byte(msg))
