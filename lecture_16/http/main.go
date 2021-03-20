@@ -8,7 +8,6 @@ import (
 
 func main() {
 
-	for {
 		nl, err := net.Listen("tcp", ":8888")
 		if err != nil {
 			fmt.Println(err.Error())
@@ -40,7 +39,6 @@ func main() {
 		msg := fmt.Sprintf(resp, len(body), body)
 		fmt.Println(msg)
 		conn.Write([]byte(msg))
-	}
 	//conn.Close()
 
 }
