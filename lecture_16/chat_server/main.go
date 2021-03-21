@@ -38,7 +38,6 @@ func main() {
 		recvTime := time.Now().Format("2006-01-02 15:04:05")
 		msg := fmt.Sprintf(`Your message: %s, received at %s`, reqstr, recvTime)
 		conn.Write([]byte(msg))
-
 	}
 
 }
