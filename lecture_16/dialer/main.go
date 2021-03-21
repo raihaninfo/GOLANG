@@ -16,7 +16,7 @@ func main() {
 
 	//bs:=make([]byte, 1024)
 
-	conn.Write([]byte("Hello\n"))
+	conn.Write([]byte("This is my first message \n"))
 
 	bs := make([]byte, 1024)
 	n, _ := conn.Read(bs)
