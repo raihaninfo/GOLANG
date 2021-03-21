@@ -13,7 +13,6 @@ func main() {
 		fmt.Println(err.Error())
 		os.Exit(1)
 	}
-
 	//bs:=make([]byte, 1024)
 
 	conn.Write([]byte("This is my first message.\n"))
