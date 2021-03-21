@@ -15,7 +15,11 @@ func main() {
 	}
 
 	//bs:=make([]byte, 1024)
+
 	conn.Write([]byte("Hello\n"))
 
+	bs := make([]byte, 1024)
+	n, _ := conn.Read(bs)
+	fmt.Println(string(bs[:n]))
 	conn.Close()
 }
