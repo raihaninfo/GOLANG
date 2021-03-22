@@ -27,6 +27,7 @@ func features(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		fmt.Println(err.Error())
 	}
+
 	ptmp, err = ptmp.ParseFiles("wpage/features.gohtml")
 	if err != nil {
 		fmt.Println(err.Error())
@@ -40,6 +41,7 @@ func docs(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		fmt.Println(err.Error())
 	}
+	
 	ptmp, err = ptmp.ParseFiles("wpage/docs.gohtml")
 	if err != nil {
 		fmt.Println(err.Error())
