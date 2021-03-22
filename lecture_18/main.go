@@ -17,12 +17,10 @@ func main() {
 func home(w http.ResponseWriter, r *http.Request) {
 
 	ptmp, err := template.ParseFiles("template/base.gohtml")
-
 	if err != nil {
 		fmt.Println(err.Error())
 	}
 	ptmp.Execute(w, nil)
-
 }
 func features(w http.ResponseWriter, r *http.Request) {
 	ptmp, err := template.ParseFiles("template/base.gohtml")
@@ -47,5 +45,4 @@ func docs(w http.ResponseWriter, r *http.Request) {
 		fmt.Println(err.Error())
 	}
 	ptmp.Execute(w, nil)
-
 }
