@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"net/http")
-
+	"net/http"
+)
 
 func main() {
 
@@ -14,12 +14,12 @@ func main() {
 
 }
 
-func home(w http.ResponseWriter, r *http.Request){
+func home(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, `Welcome To my first golang Web page`)
 }
-func about(w http.ResponseWriter, r *http.Request){
+func about(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, `Welcome To About Page`)
 }
-func contact(w http.ResponseWriter, r *http.Request){
+func contact(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, `Welcome To Contact Page`)
 }
