@@ -101,7 +101,6 @@ func request(w http.ResponseWriter, r *http.Request) {
 	}
 
 	defer insert.Close()
-
 	fmt.Fprintf(w, `OK`)
 
 }
