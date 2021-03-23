@@ -23,6 +23,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 	ptmp.Execute(w, nil)
 }
 func features(w http.ResponseWriter, r *http.Request) {
+
 	ptmp, err := template.ParseFiles("template/base.gohtml")
 	if err != nil {
 		fmt.Println(err.Error())
@@ -35,13 +36,14 @@ func features(w http.ResponseWriter, r *http.Request) {
 	ptmp.Execute(w, nil)
 
 }
+
 func docs(w http.ResponseWriter, r *http.Request) {
 
 	ptmp, err := template.ParseFiles("template/base.gohtml")
 	if err != nil {
 		fmt.Println(err.Error())
 	}
-	
+
 	ptmp, err = ptmp.ParseFiles("wpage/docs.gohtml")
 	if err != nil {
 		fmt.Println(err.Error())
