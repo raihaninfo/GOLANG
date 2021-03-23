@@ -91,18 +91,17 @@ func request(w http.ResponseWriter, r *http.Request) {
 	// for key, val := range r.Form {
 	// 	fmt.Println(key, val)
 	// }
-	
-	qs:= "INSERT INTO `reqest` (`id`, `name`, `company`, `email`, `status`) VALUES (NULL, '%s', '%s', '%s', '1');"
-	sql:= fmt.Sprintf(qs, name, company, email)
+
+	qs := "INSERT INTO `reqest` (`id`, `name`, `company`, `email`, `status`) VALUES (NULL, '%s', '%s', '%s', '1');"
+	sql := fmt.Sprintf(qs, name, company, email)
 	insert, err := db.Query(sql)
 
-	if err != nil{
+	if err != nil {
 		panic(err.Error())
 	}
-	
+
 	defer insert.Close()
 
 	fmt.Fprintf(w, `OK`)
-
 
 }
