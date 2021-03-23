@@ -9,7 +9,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-// package lavel variables
+// package level variables
 var db *sql.DB
 var err error
 
