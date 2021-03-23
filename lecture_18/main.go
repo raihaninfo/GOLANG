@@ -79,7 +79,6 @@ func docs(w http.ResponseWriter, r *http.Request) {
 func request(w http.ResponseWriter, r *http.Request) {
 
 	// Method 1
-
 	name := r.FormValue("name")
 	company := r.FormValue("company")
 	email := r.FormValue("email")
