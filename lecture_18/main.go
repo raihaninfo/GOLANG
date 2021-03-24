@@ -15,7 +15,6 @@ var err error
 
 func init() {
 	// Open up our database connection.
-	// I've set up a database on my local machine using phpmyadmin.
 	// The database is called testDb
 	db, err = sql.Open("mysql", "root:mysql@tcp(127.0.0.1:3306)/hosting")
 
@@ -25,7 +24,6 @@ func init() {
 	}
 
 	// defer the close till after the main function has finished
-	// executing
 
 	//defer db.Close()
 	fmt.Println("database connection successfull")
