@@ -1,2 +1,2 @@
-# GOLANG code
+# GOLANG CLASS
 # Golang coding bootcamp
