@@ -11,5 +11,4 @@ func main() {
 	delete(x, "Job")
 	fmt.Println(x)
 	// fmt.Println(x["Name"])
-
 }
