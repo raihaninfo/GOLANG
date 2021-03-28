@@ -16,8 +16,9 @@ func main() {
 	if err != nil {
 		fmt.Println(err.Error())
 	}
+	defer posf.Close()
 	n, err := posf.Write([]byte("My name is Raihan"))
 	fmt.Println(n, err)
 
-	posf.Close()
+	//posf.Close()
 }
