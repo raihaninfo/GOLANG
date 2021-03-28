@@ -13,12 +13,11 @@ func main() {
 	fmt.Println(dir)
 
 	posf, err := os.Create("raihan.txt")
-	if err != nil{
+	if err != nil {
 		fmt.Println(err.Error())
 	}
-
-	n, err:= posf.Write([]byte("My name is Raihan"))
+	n, err := posf.Write([]byte("My name is Raihan"))
 	fmt.Println(n, err)
-	
+
 	posf.Close()
 }
