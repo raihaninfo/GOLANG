@@ -9,9 +9,7 @@ func main() {
 	// golang file handiling
 	text := "My name is raihan, i'm web Developer, I Love Golang"
 	fileName:="raihan.txt"
-	isErr := createFile(fileName, text)
-
-	fmt.Println(isErr)
+	createFile(fileName, text)
 
 }
 func createFile(fileName, text string) bool {
