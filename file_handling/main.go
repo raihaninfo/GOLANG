@@ -23,10 +23,6 @@ func createFile(fileName string) bool {
 	defer posf.Close()
 	text := "My name is raihan"
 	posf.Write([]byte(text))
-	//fmt.Println(n, err)
-	// if err != nil {
-	// 	return false
-	// }
 
 	return true
 }
