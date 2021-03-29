@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	// golang file handiling
 	text := "My name is raihan, i'm web Developer, I Love Golang"
 	fileName:="raihan.txt"
 	createFile(fileName, text)
