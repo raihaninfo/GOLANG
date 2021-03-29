@@ -14,7 +14,7 @@ func main() {
 
 	createFile("mdaburaihan.txt")
 }
-func createFile(fileName string)bool{
+func createFile(fileName string) bool {
 	posf, err := os.Create(fileName)
 	if err != nil {
 		fmt.Println(err.Error())
@@ -22,11 +22,11 @@ func createFile(fileName string)bool{
 	}
 	defer posf.Close()
 	text := "My name is raihan"
-	_, err = posf.Write([]byte(text))
+	posf.Write([]byte(text))
 	//fmt.Println(n, err)
-	if err !=nil{
-		return false
-	}
+	// if err != nil {
+	// 	return false
+	// }
 
 	return true
 }
