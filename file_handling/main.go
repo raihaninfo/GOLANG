@@ -6,14 +6,16 @@ import (
 )
 
 func main() {
-	dir, err := os.Getwd()
-	if err != nil {
-		fmt.Println(err.Error())
-	}
-	fmt.Println(dir)
-	text:= "My name is raihan, i'm web Developer"
-	createFile("mdaburaihan.txt", text)
-	
+	// dir, err := os.Getwd()
+	// if err != nil {
+	// 	fmt.Println(err.Error())
+	// }
+	// fmt.Println(dir)
+	text := "My name is raihan, i'm web Developer"
+	isErr := createFile("mdaburaihan.txt", text)
+
+	fmt.Println(isErr)
+
 }
 func createFile(fileName, text string) bool {
 	posf, err := os.Create(fileName)
