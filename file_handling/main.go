@@ -22,8 +22,6 @@ func createFile(fileName, text string) bool {
 		return false
 	}
 	defer posf.Close()
-	
 	posf.Write([]byte(text))
-
 	return true
 }
