@@ -11,8 +11,9 @@ func main() {
 	// 	fmt.Println(err.Error())
 	// }
 	// fmt.Println(dir)
-	text := "My name is raihan, i'm web Developer"
-	isErr := createFile("mdaburaihan.txt", text)
+	text := "My name is raihan, i'm web Developer, I Love Golang"
+	fileName:="raihan.txt"
+	isErr := createFile(fileName, text)
 
 	fmt.Println(isErr)
 
