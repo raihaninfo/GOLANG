@@ -7,7 +7,7 @@ import (
 
 func main() {
 	text := "My name is raihan, i'm web Developer, I Love Golang"
-	fileName:="raihan.txt"
+	fileName := "raihan.txt"
 	createFile(fileName, text)
 
 }
