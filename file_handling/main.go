@@ -18,7 +18,7 @@ func main() {
 	}
 	defer posf.Close()
 
-	n, err := posf.Write([]byte("My name is Raihan"))
+	n, err := posf.Write([]byte("My name is Raihan, This is my first golang file"))
 	fmt.Println(n, err)
 
 	//posf.Close()
