@@ -11,17 +11,18 @@ func main() {
 		fmt.Println(err.Error())
 	}
 	fmt.Println(dir)
-
-	createFile("mdaburaihan.txt")
+	text:= "My name is raihan, i'm web Developer"
+	createFile("mdaburaihan.txt", text)
+	
 }
-func createFile(fileName string) bool {
+func createFile(fileName, text string) bool {
 	posf, err := os.Create(fileName)
 	if err != nil {
 		fmt.Println(err.Error())
 		return false
 	}
 	defer posf.Close()
-	text := "My name is raihan"
+	
 	posf.Write([]byte(text))
 
 	return true
