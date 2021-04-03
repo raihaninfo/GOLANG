@@ -23,8 +23,6 @@ func init() {
 		panic(err.Error())
 	}
 
-	// defer the close till after the main function has finished
-
 	//defer db.Close()
 	fmt.Println("database connection successfull")
 }
