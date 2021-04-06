@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	file, err := os.Create("index.html")
+	file, err := os.Create("index.txt")
 	if err != nil {
 		fmt.Println(err.Error())
 	}
