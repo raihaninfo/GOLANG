@@ -1,17 +1,7 @@
 package main
 
-import (
-	"fmt"
-	"os"
-)
+import "fmt"
 
 func main() {
-
-	fi, err := os.Stat("raihan.txt")
-	if err != nil {
-		fmt.Println(err.Error())
-	}
-
-	fmt.Println(fi.IsDir())
-
+	fmt.Println("raihan")
 }
