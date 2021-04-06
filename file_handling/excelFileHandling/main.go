@@ -12,5 +12,4 @@ func main() {
 	}
 	file.Write([]byte("My name is raihan"))
 	defer file.Close()
-	fmt.Println("raihan")
 }
