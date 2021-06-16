@@ -11,11 +11,14 @@ func main() {
 	var name1, city string = "raihan", "Dhaka"
 	fmt.Println(name1, city)
 
-
-	// int type data 
+	// int type data
 	var num1 int = 30
 	var num2 int = 40
 	var sum int = num1 + num2
 	fmt.Println(sum)
-}
 
+	// sortHand variable
+
+	num5 := 34
+	fmt.Println(num5)
+}
