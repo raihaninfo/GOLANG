@@ -3,16 +3,6 @@ package main
 import "fmt"
 
 func main() {
-<<<<<<< Updated upstream
-	// map, struct
-	x := make(map[string]string)
-	x["Name"] = "Raihan"
-	x["Age"] = "21"
-	x["Job"] = "Student"
-	delete(x, "Job")
-	fmt.Println(x)
-	// fmt.Println(x["Name"])
-=======
 	// array, slice, map, struct
 	var student [3]string
 	student[0] = "Raihan"
@@ -28,6 +18,4 @@ func main() {
 	// short hand way
 	students := [...]string{"Raihan", "hasan", "Ruhul-Amin", "monirul", "Rabbi"}
 	fmt.Println(students)
-
->>>>>>> Stashed changes
 }
