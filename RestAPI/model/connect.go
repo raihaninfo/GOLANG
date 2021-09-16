@@ -13,7 +13,7 @@ func Connect() *sql.DB {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Println("Connected to the database")
+	fmt.Println("Connected to the database....")
 	con = db
 	return db
 }
