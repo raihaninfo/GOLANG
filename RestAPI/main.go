@@ -1,22 +1,17 @@
 package main
 
 import (
-	"GOLANG/RestAPI/structs"
-	"encoding/json"
+	"GOLANG/RestAPI/controller"
+	"GOLANG/RestAPI/model"
+	"log"
 	"net/http"
+
+	_ "github.com/go-sql-driver/mysql"
 )
 
 func main() {
-	mux := http.NewServeMux()
-	mux.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
-		if r.Method == http.MethodGet {
-			data := structs.Response{
-				Code: http.StatusOK,
-				Body: "ping",
-			}
-
-			json.NewEncoder(w).Encode(data)
-		}
-	})
-	http.ListenAndServe(":8000", mux)
+	mux := controller.Register()
+	db := model.Connect()
+	defer db.Close()
+	log.Fatal(http.ListenAndServe(":8000", mux))
 }
