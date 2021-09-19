@@ -6,7 +6,7 @@ import (
 )
 
 var con *sql.DB
-
+// Database connection function
 func Connect() *sql.DB {
 
 	db, err := sql.Open("mysql", "root:mysql@tcp(127.0.0.1:3306)/restapi-go")

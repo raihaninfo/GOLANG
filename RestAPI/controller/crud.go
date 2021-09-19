@@ -10,6 +10,7 @@ import (
 
 func create() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
+		//POST Method
 		if r.Method == http.MethodPost {
 			data := views.PostRequest{}
 			json.NewDecoder(r.Body).Decode(&data)
@@ -20,9 +21,9 @@ func create() http.HandlerFunc {
 			}
 			w.WriteHeader(http.StatusCreated)
 			json.NewEncoder(w).Encode(data)
-		}else if r.Method == http.MethodGet{
+		} else if r.Method == http.MethodGet { //GET Method
 			data, err := model.ReadAll()
-			if err !=nil{
+			if err != nil {
 				w.Write([]byte(err.Error()))
 			}
 			w.WriteHeader(http.StatusOK)
