@@ -2,9 +2,10 @@ package model
 
 import "fmt"
 
+// Insert database query
 func CreateTodo(name, todo string) error {
-	insertQ, err := con.Query("INSERT INTO todo VALUES(?, ?)", name, todo)
-	defer insertQ.Close()
+	insertQuery, err := con.Query("INSERT INTO todo VALUES(?, ?)", name, todo)
+	defer insertQuery.Close()
 	if err != nil {
 		fmt.Println(err)
 		return err
