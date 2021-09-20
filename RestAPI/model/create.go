@@ -12,3 +12,13 @@ func CreateTodo(name, todo string) error {
 	}
 	return nil
 }
+
+func DeleteTodo(name string) error {
+	insertQuery, err := con.Query("DELETE FROM todo WHERE name=?", name)
+	defer insertQuery.Close()
+	if err != nil {
+		fmt.Println(err)
+		return err
+	}
+	return nil
+}
