@@ -1,9 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	// search "M"
+	// // search "M"
 	// pragraph := "my name is raihan, i'm from bangladesh"
 	// for _, value := range pragraph {
 	// 	valueString := string(value)
@@ -12,12 +15,14 @@ func main() {
 	// 	}
 	// }
 
-	// array of sum
-	numbers := [...]float64{1, 2, 3}
-	result := 0.0
-	for _, value := range numbers {
-		result += value
-	}
-	fmt.Println(result)
+	// // array of sum
+	// numbers := [...]float64{1, 2, 3}
+	// result := 0.0
+	// for _, value := range numbers {
+	// 	result += value
+	// }
+	// fmt.Println(result)
 
+	todayTime:= time.Now()
+	fmt.Println(todayTime)
 }
