@@ -23,6 +23,22 @@ func main() {
 	// }
 	// fmt.Println(result)
 
-	todayTime:= time.Now()
+	todayTime := time.Now()
 	fmt.Println(todayTime)
+	// fizzBuzz(15)
 }
+
+// // FizzBuzz problem solved
+// func fizzBuzz(n int32) {
+// 	// Write your code here
+// 	if n%3 == 0 && n%5 == 0 {
+// 		fmt.Println("FizzBuzz")
+// 	} else if n%3 == 0 {
+// 		fmt.Println("Fizz")
+// 	} else if n%5 == 0 {
+// 		fmt.Println("Buzz")
+// 	} else {
+// 		fmt.Println(n)
+// 	}
+
+// }
