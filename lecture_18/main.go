@@ -58,7 +58,6 @@ func features(w http.ResponseWriter, r *http.Request) {
 }
 
 func docs(w http.ResponseWriter, r *http.Request) {
-
 	ptmp, err := template.ParseFiles("template/base.gohtml")
 	if err != nil {
 		fmt.Println(err.Error())
