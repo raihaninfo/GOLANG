@@ -17,7 +17,6 @@ func init() {
 	// Open up our database connection.
 	// The database is called testDb
 	db, err = sql.Open("mysql", "root:mysql@tcp(127.0.0.1:3306)/hosting")
-
 	// if there is an error opening the connection, handle it
 	if err != nil {
 		panic(err.Error())
