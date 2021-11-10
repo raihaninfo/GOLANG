@@ -18,7 +18,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 	session, _ := cookie.Get(r, "Golang-session")
 	var authenticated interface{} = session.Values["authenticated"]
 	fmt.Fprintf(w, "Raihan\n")
-	
+
 	if authenticated != nil {
 		isAuthenticated := session.Values["authenticated"].(bool)
 		if !isAuthenticated {
@@ -51,7 +51,6 @@ func main() {
 	fmt.Println("Listening port :8080")
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
-		log.Fatal("Error Starting the HTTP Server : ", err)
-		return
+		fmt.Println(err.Error())
 	}
 }
