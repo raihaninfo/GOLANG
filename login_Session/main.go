@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"net/http"
 
+	"github.com/gorilla/mux"
 	"github.com/gorilla/sessions"
 )
 
@@ -45,11 +45,12 @@ func logout(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", home)
-	http.HandleFunc("/login", login)
-	http.HandleFunc("/logout", logout)
+	r := mux.NewRouter()
+	r.HandleFunc("/", home)
+	r.HandleFunc("/login", login)
+	r.HandleFunc("/logout", logout)
 	fmt.Println("Listening port :8080")
-	err := http.ListenAndServe(":8080", nil)
+	err := http.ListenAndServe(":8080", r)
 	if err != nil {
 		fmt.Println(err.Error())
 	}
